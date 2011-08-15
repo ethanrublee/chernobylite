@@ -23,6 +23,8 @@
 #include <boost/format.hpp>
 #include <boost/lexical_cast.hpp>
 
+namespace chernobylite
+{
 using std::string;
 using std::vector;
 
@@ -158,4 +160,5 @@ void lsFilesOfType(const char * dir, const string& extension,
     }
     closedir(dp);
     std::sort(files.begin(), files.end());
+}
 }
